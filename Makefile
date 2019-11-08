@@ -1,9 +1,9 @@
-CC=gcc
+CC=g++
 CFLAGS=-Wall
-DEPS=header.h
-OBJ=functions.o main.o
+DEPS=ChessInterface.hpp
+OBJ=ChessImplementation.o game.o
 
-%.o: %.c $(DEPS)
+%.o: %.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 game: $(OBJ)
