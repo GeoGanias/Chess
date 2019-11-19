@@ -1,11 +1,12 @@
-sudo: required
-  
-# Enable C++ support
-language: cpp
+language: c
 
-# Compiler selection
+compiler:
+  - gcc
+  - clang
+
 script:
-    - ./configure
-    - make
-    - make install
-  
+  - autoreconf -i
+  - ../configure
+  - make check
+  - make distcheck
+  - make install
