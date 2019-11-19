@@ -4,6 +4,8 @@ sudo: required
 language: cpp
 
 # Compiler selection
-compiler:
-  - g++
+script:
+    - ./configure
+    - make
+    - make install
   
