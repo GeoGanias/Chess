@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 #include <termios.h> //Change terminal i/o settings
-#include "ChessInterface.hpp"
+#include "../include/ChessInterface.hpp"
+#include "../config.h"
 
 #define BOLD "\x1B[1m"
 #define BLACK "\x1B[30m"
