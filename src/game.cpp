@@ -1,5 +1,5 @@
 #include "../include/ChessInterface.hpp"
-#include "../config.h"
+#include "../include/config.h"
 
 int main(int argc, const char *argv[]){
     ChessBoard* board = new ChessBoard();
